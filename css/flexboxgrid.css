@@ -15,13 +15,12 @@
 }
 
 .row {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -34,7 +33,7 @@
 }
 
 .row.reverse {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
@@ -80,7 +79,6 @@
 .col-xs-offset-10,
 .col-xs-offset-11,
 .col-xs-offset-12 {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -339,7 +337,6 @@
   .col-sm-offset-10,
   .col-sm-offset-11,
   .col-sm-offset-12 {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -573,6 +570,10 @@
     -ms-flex-order: 1;
     order: 1;
   }
+
+  .row, .row.reverse {
+    -webkit-box-orient: horizontal;
+  }
 }
 
 @media only screen and (min-width: 62em) {
@@ -601,7 +602,6 @@
   .col-md-offset-10,
   .col-md-offset-11,
   .col-md-offset-12 {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -861,7 +861,6 @@
   .col-lg-offset-10,
   .col-lg-offset-11,
   .col-lg-offset-12 {
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
